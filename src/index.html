@@ -3,19 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Мастерская: таймер</title>
+    <link rel="stylesheet" href="./style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
+      type="text/css"
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <header></header>
+    <section>
+      <div class="wrapper">
+        <hgroup>
+          <h1>TIMER</h1>
+        </hgroup>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+        <div class="timer" id="timer-1">
+          <div class="field">
+            <p class="numbers days, value" data-value="days">00</p>
+            <br />
+            <p class="strings timeRefDays">Days</p>
+          </div>
+          <div class="field">
+            <p class="numbers hours, value" data-value="hours">00</p>
+            <br />
+            <p class="strings timeRefHours">Hours</p>
+          </div>
+          <div class="field">
+            <p class="numbers minutes, value" data-value="mins">00</p>
+            <br />
+            <p class="strings timeRefMinutes">Minutes</p>
+          </div>
+          <div class="field">
+            <p class="numbers seconds, value" data-value="secs">00</p>
+            <br />
+            <p class="strings timeRefSeconds">Seconds</p>
+          </div>
+        </div>
+        <!-- end div#countdown -->
+
+        <footer></footer>
+      </div>
+      <!-- end div.wrapper -->
+    </section>
+
+    <script src="./timer.js"></script>
   </body>
 </html>
