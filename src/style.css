@@ -52,7 +52,7 @@ a:hover {
 header {
   width: 100%;
   height: 50%;
-  background: #608b8b;
+  background: #fff;
 }
 
 /* section */
@@ -64,7 +64,7 @@ section {
 
 section h1,
 section p.meta {
-  color: #ffffff;
+  color: #b2b2b2;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -87,7 +87,7 @@ section h1 {
 /* countdown styles */
 
 div#timer-1 {
-  color: #353535;
+  color: #fff;
 }
 
 div#timer-1 p {
@@ -99,7 +99,7 @@ div#timer-1 p {
 p.numbers {
   width: 100%;
   height: 85%;
-  background: #ffffff;
+  background: #ff0000;
   margin-top: -25px;
   padding-top: 100px;
 }
@@ -109,13 +109,13 @@ p.strings {
   height: auto;
   padding: 30px 0;
   background: #ff227e;
-  color: #ffffff;
+  color: #fff;
 }
 
 div.field {
   width: 210px;
   height: 360px;
-  background: #ffffff;
+  background: #44463f;
   float: left;
   padding: 25px 0 0 0;
   margin: 30px 15px 0 0;
