@@ -14,7 +14,7 @@ class CountdownTimer {
     setInterval(() => {
       const currentTime = Date.now();
       const time = this.targetDate - currentTime;
-      this.changeTimer(this.getTimeComponents(time));
+      this.differencesTimer(this.getTimeComponents(time));
     }, 1000);
   }
 
@@ -30,7 +30,7 @@ class CountdownTimer {
     return { days, hours, mins, secs };
   }
 
-  changeTimer({ days, hours, mins, secs }) {
+  differencesTimer({ days, hours, mins, secs }) {
     this.days.textContent = `${days}`;
     this.hours.textContent = `${hours}`;
     this.mins.textContent = `${mins}`;
